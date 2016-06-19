@@ -1,0 +1,21 @@
+<div>
+
+    <h4>LISTADO CLIENTES</h4>
+  <table class="table table-striped table-hover">
+      <thead>
+          <tr>
+            <td>Nombre:</td>
+          </tr>
+      </thead>
+      <tbody>
+          <tr dir-paginate="item in vm.clientes |itemsPerPage:5">
+            <td>{{item.nombreCliente}}</td>
+          </tr>
+      </tbody>
+      <dir-pagination-controls
+					max-size="5"
+					direction-links="true"
+					boundary-links="true" >
+				</dir-pagination-controls>
+  </table>
+</div>

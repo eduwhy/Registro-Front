@@ -1,0 +1,42 @@
+<div>
+    <form ng-submit="vm.create()">
+        <label for="numDocumento">Número Documento</label>
+        <input type="text" name="numDocumento" ng-model="vm.cliente.numDocumento">
+
+        <label for="nombre">Nombres</label>
+        <input type="text" name="nombres" ng-model="vm.cliente.nombres">
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" ng-model="vm.cliente.apellidos">
+
+        <label for="telefono">Teléfono</label>
+        <input type="text" name="telefono" ng-model="vm.cliente.telefono">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" ng-model="vm.cliente.email">
+
+        <label for="profesion">Profesión</label>
+        <input type="text" name="profesion" ng-model="vm.cliente.profesion">
+
+        <label for="observaciones">Observaciones</label>
+        <textarea name="observaciones" ng-model="vm.cliente.observaciones"></textarea>
+
+        <label>Tipo Documento</label>
+        <select ng-model="vm.cliente.tipoDocumento">
+            <option ng-value="C.C.">C.C.</option>
+            <option ng-value="C.E.">C.E.</option>
+            <option ng-value="T.I.">T.I.</option>
+            <option ng-value="PASAPORTE">PASAPORTE</option>
+        </select>
+
+        <label>Sexo</label>
+        <select ng-model="vm.cliente.sexo">
+            <option ng-value="M">Masculino</option>
+            <option ng-value="F">Femenino</option>
+        </select>
+
+        <input type="submit" name="name" value="GUARDAR">
+
+    </form>
+
+</div>

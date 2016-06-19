@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Mangel</title>
+
+    <!-- build:css css/style.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="lib/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/angular-material-data-table/dist/md-data-table.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+
+<body>
+
+    <encabezado></encabezado>
+
+    <div ui-view></div>
+
+    <piepagina></piepagina>
+
+
+
+    <!-- build:js js/vendor.min.js -->
+    <!-- bower:js -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-aria/angular-aria.js"></script>
+    <script src="lib/angular-messages/angular-messages.js"></script>
+    <script src="lib/angular-material/angular-material.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="lib/angular-validation-match/dist/angular-validation-match.min.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="lib/angular-filter/dist/angular-filter.min.js"></script>
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/angular-material-data-table/dist/md-data-table.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js js/app.min.js -->
+    <!-- inject:js -->
+    <script src="/app/app.module.js"></script>
+    <script src="/app/config/app.constant.js"></script>
+    <script src="/app/footer/footer-directive.js"></script>
+    <script src="/app/header/header-directive.js"></script>
+    <script src="/app/usuarios/app.module.js"></script>
+    <script src="/app/usuarios/usuarios-route.js"></script>
+    <script src="/app/usuarios/usuarios-service.js"></script>
+    <script src="/app/usuarios/usuarios-create/controller-create.js"></script>
+    <script src="/app/usuarios/usuarios-create/directive-create.js"></script>
+    <script src="/app/usuarios/usuarios-list/controller-list.js"></script>
+    <script src="/app/usuarios/usuarios-list/directive-list.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+</body>
+
+</html>
