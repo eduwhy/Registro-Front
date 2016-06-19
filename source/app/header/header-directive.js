@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('why.header', [
+    angular.module('app.header', [
 
     ]).directive('encabezado', Encabezado);
 

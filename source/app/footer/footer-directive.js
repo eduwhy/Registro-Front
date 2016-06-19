@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('why.footer', [
+    angular.module('app.footer', [
 
     ]).directive('piepagina', PiePagina);
 

@@ -12,7 +12,9 @@
         'ui.bootstrap',
         'validation.match',
         //'templates,
-        'app.usuarios'
+        'app.usuarios',
+        'app.footer',
+        'app.header'
     ]);
 
 })();

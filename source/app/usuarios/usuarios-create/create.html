@@ -1,28 +1,30 @@
-<div>
-    <form ng-submit="vm.create()">
-        <label for="numDocumento">Número Documento</label>
-        <input type="text" name="numDocumento" ng-model="vm.cliente.numDocumento">
+<section class="formulario container">
+  <h3 class="titulo-regis text-center"> FORMULARIO DE INSCRIPCIÓN</h3>
+    <form ng-submit="vm.create()" class="col-md-offset-3 col-md-6">
+      <div class="form-group">
+        <input placeholder="Numer de Documento" class="form-control" type="text" name="numDocumento" ng-model="vm.cliente.numDocumento">
+      </div>
+      <div class="form-group">
+        <input placeholder="Nombres" class="form-control" type="text" name="nombres" ng-model="vm.cliente.nombres">
+      </div>
+      <div class="form-group">
+        <input placeholder="Apellidos"  class="form-control" type="text" name="apellidos" ng-model="vm.cliente.apellidos">
+      </div>
 
-        <label for="nombre">Nombres</label>
-        <input type="text" name="nombres" ng-model="vm.cliente.nombres">
-
-        <label for="apellidos">Apellidos</label>
-        <input type="text" name="apellidos" ng-model="vm.cliente.apellidos">
-
-        <label for="telefono">Teléfono</label>
-        <input type="text" name="telefono" ng-model="vm.cliente.telefono">
-
-        <label for="email">Email</label>
-        <input type="email" name="email" ng-model="vm.cliente.email">
-
-        <label for="profesion">Profesión</label>
-        <input type="text" name="profesion" ng-model="vm.cliente.profesion">
-
-        <label for="observaciones">Observaciones</label>
-        <textarea name="observaciones" ng-model="vm.cliente.observaciones"></textarea>
-
+      <div class="form-group">
+        <input type="text"  class="form-control" name="telefono" ng-model="vm.cliente.telefono">
+      </div>
+      <div class="form-group">
+        <input type="email"  class="form-control" name="email" ng-model="vm.cliente.email">
+      </div>
+      <div class="form-group">
+        <input type="text"  class="form-control" name="profesion" ng-model="vm.cliente.profesion">
+      </div>
+        <div class="form-group">
+        <textarea name="observaciones"  class="form-control" ng-model="vm.cliente.observaciones"></textarea>
+      </div>
         <label>Tipo Documento</label>
-        <select ng-model="vm.cliente.tipoDocumento">
+        <select class="form-control" ng-model="vm.cliente.tipoDocumento">
             <option ng-value="C.C.">C.C.</option>
             <option ng-value="C.E.">C.E.</option>
             <option ng-value="T.I.">T.I.</option>
@@ -30,13 +32,14 @@
         </select>
 
         <label>Sexo</label>
-        <select ng-model="vm.cliente.sexo">
+        <select ng-model="vm.cliente.sexo" class="form-control">
             <option ng-value="M">Masculino</option>
             <option ng-value="F">Femenino</option>
         </select>
 
-        <input type="submit" name="name" value="GUARDAR">
-
+        <div class="form-group">
+          <input type="submit" name="name" value="GUARDAR" class="btn btn-primary">
+        </div>
     </form>
 
-</div>
+</section>
